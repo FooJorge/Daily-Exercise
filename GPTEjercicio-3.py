@@ -3,4 +3,4 @@
 
 a=input('Dime una palabra: ')
 b=len(a)
-print('El número de letras de', a, 'son:', b)
+print("El número de letras de {} son: {}".format(a, b))
