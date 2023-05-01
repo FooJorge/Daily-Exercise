@@ -3,5 +3,5 @@
 
 frase=input('Escribe una frase: ')
 espacios=frase.count(' ')
-palabras=int(espacios)+1 #Una frase contiene una palabra más que el número de espacios que tiene
+palabras=espacios+1 #Una frase contiene una palabra más que el número de espacios que tiene
 print("La frase:", frase, "contiene", palabras, 'palabras')
