@@ -7,11 +7,11 @@ numeros = np.random.randint(0, 100, 10) # Crea un arreglo de numpy con 10 númer
 
 # Encontrar el valor mínimo, máximo y promedio de los números en el arreglo
 minimo = np.min(numeros)
-indice_minimo=np.where(numeros==minimo)
+indice_minimo=np.argmin(numeros)
 maximo = np.max(numeros)
-indice_maximo=np.where(numeros==maximo)
+indice_maximo=np.argmax(numeros)
 
 # Mostrar los resultados
-print(numeros) #Por si quiero ver la lista de números para comprobar que es correcto
-print("El valor mínimo es:", minimo, "cuyo índice es el arreglo es:", indice_minimo[0]) #indice_minimo devuelve una tupla de dos valores, el que nos interesa es el primero [0]
-print("El valor máximo es:", maximo, "cuyo índice es el arreglo es:", indice_maximo[0])
+#print(numeros) #Por si quiero ver la lista de números para comprobar que es correcto
+print("El valor mínimo es:", minimo, "cuyo índice es el arreglo es:", indice_minimo)
+print("El valor máximo es:", maximo, "cuyo índice es el arreglo es:", indice_maximo)
