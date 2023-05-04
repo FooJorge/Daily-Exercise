@@ -11,8 +11,6 @@ dict1={'Pais':['Portugal','España', 'Italia', 'Francia'],
 
 df=pd.DataFrame(dict1)
 
-densidad=(df.Poblacion/df.Area)*1000000
-df_fusion=pd.concat([df, densidad], axis=1) #axis=1 indicamos que queremos unirlo por filas, si ponemos axis=0 unimos por columnas
-df_fusion.columns=['Pais','Poblacion','Area','Densidad']
+df['Densidad']=(df.Poblacion/df.Area)*1000000
 
-print(df_fusion)
+print(df)
